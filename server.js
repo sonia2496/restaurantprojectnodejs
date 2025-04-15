@@ -22,7 +22,7 @@ app.use(express.json());
 app.use("/api/restaurants", restaurantRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Welcome!');
+    res.send('Welcome I am landing page of your website!');
   });
   
 

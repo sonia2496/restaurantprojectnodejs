@@ -32,7 +32,6 @@ router.get("/", async (req, res) => {
 
   try {
     const results = await db.getAllRestaurants(page, perPage, borough);
-    console.log("rr", results)
     res.json(results);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -55,7 +54,7 @@ router.put("/:id", async (req, res) => {
   try {
     const updated = await db.updateRestaurantById(req.body, req.params.id);
     if (!updated) return res.status(404).json({ message: "Restaurant not found" });
-    res.status(204).send(); // No content
+    res.status(204).send();
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -66,7 +65,7 @@ router.delete("/:id", async (req, res) => {
   try {
     const deleted = await db.deleteRestaurantById(req.params.id);
     if (!deleted) return res.status(404).json({ message: "Restaurant not found" });
-    res.status(204).send(); // No content
+    res.status(204).send(); 
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

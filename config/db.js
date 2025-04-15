@@ -49,14 +49,15 @@ module.exports = {
   },
 
   getRestaurantById: function (id) {
-    return Restaurant.findById(id).exec();
+    return Restaurant.findOne({ restaurant_id: id }).exec();
   },
 
   updateRestaurantById: function (data, id) {
-    return Restaurant.findByIdAndUpdate(id, data, { new: true }).exec();
+    return Restaurant.findOneAndUpdate({ restaurant_id: id }, data, { new: true }).exec();
   },
 
   deleteRestaurantById: function (id) {
-    return Restaurant.findByIdAndDelete(id).exec();
+    return Restaurant.findOneAndDelete({ restaurant_id: id }).exec();
   }
+  
 };
