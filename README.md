@@ -2,6 +2,7 @@
 
 ## 👨‍💻 Author
 **Name:** Sonia, Rohit Sharma 
+
 **Date:** April 16, 2025
 
 
@@ -22,7 +23,7 @@ This project is a secure, database-driven **Node.js/Express Web API** designed f
 | Method | Endpoint                        | Description |
 |--------|----------------------------------|-------------|
 | POST   | `/api/restaurants`              | Add new restaurant |
-| GET    | `/api/restaurants`              | Get all restaurants (supports pagination and borough filter) |
+| GET    | `/api/restaurants`              | Get all restaurants |
 | GET    | `/api/restaurants/:id`          | Get restaurant by ID |
 | PUT    | `/api/restaurants/:id`          | Update restaurant by ID |
 | DELETE | `/api/restaurants/:id`          | Delete restaurant by ID |
