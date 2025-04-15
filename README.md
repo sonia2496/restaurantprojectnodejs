@@ -1,14 +1,13 @@
 # ITE5315 Final Project – Restaurant Web API
 
 ## 👨‍💻 Author
-**Name:** Your Name  
-**Student ID:** YourStudentID  
-**Date:** April 10, 2025
+**Name:** Sonia, Rohit Sharma 
+**Date:** April 16, 2025
 
 
 ## 📚 Project Description
 
-This project is a secure, database-driven **Node.js/Express Web API** designed for managing restaurant data using **MongoDB Atlas**. It performs full CRUD operations and supports filtering, pagination, and RESTful routes. It is also deployed live on Heroku.
+This project is a secure, database-driven **Node.js/Express Web API** designed for managing restaurant data using **MongoDB Atlas**. It performs full CRUD operations and supports filtering, pagination and routes. It is also deployed live on Vercel.
 
 ## 🛠️ Technologies Used
 
@@ -16,8 +15,7 @@ This project is a secure, database-driven **Node.js/Express Web API** designed f
 - Express.js
 - MongoDB Atlas (with Mongoose)
 - CORS
-- dotenv
-- Heroku
+- Vercel (for deployment)
 
 ## 🌐 API Endpoints
 
@@ -29,12 +27,9 @@ This project is a secure, database-driven **Node.js/Express Web API** designed f
 | PUT    | `/api/restaurants/:id`          | Update restaurant by ID |
 | DELETE | `/api/restaurants/:id`          | Delete restaurant by ID |
 
-Example:  
-`GET /api/restaurants?page=1&perPage=5&borough=Brooklyn`
-
 ## 📦 How to Run Locally
 
-1. Clone the repo and install dependencies:
-
-
-npm install
+1. Clone the repository
+2. Install dependencies
+3. Update .env for configuration
+4. Start the server, execute **node server.js**
